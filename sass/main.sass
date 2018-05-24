@@ -130,24 +130,62 @@ a:hover
         font-size: 10px
     header
         font-size: 20px
+        grid-column: 1 / 2
+        grid-row: 1 / 2
         display: flex
         justify-content: center
         align-self: center
     .technologies-graphic
-        width: 6%
-        height: 40%
+        width: 8vw
+        height: 4vh
     .arrow
         height: 10vw
     #gulp
-        height: 20px
+        height: 30px
     .container
         display: grid
-        grid-template-columns: 15vw 70vw 15vw
-        grid-template-rows: 15vw 70vw 15vw
-        grid-template-areas: 'left-top-content header right-top-content' '. content .' 'left-bottom-content . right-bottom-content'
- 
+        grid-template-rows: 15vh 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: 'header' 'content'
+    .container-projects
+        display: grid
+        grid-template-rows: 15vh 25vh 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: 'header' 'content' 'image-1' 'image-2' 'image-3' 'image-4'
     .container-technologies
         display: grid
-        grid-template-columns: 15vw 70vw 15vw
-        grid-template-rows: 15vw 70vw 15vw
-        grid-template-areas: '. header .' '. content-technologies .' '. technologies .'
+        grid-template-rows: 15vw 50vw 15vw
+        grid-template-columns: 1fr
+        grid-template-areas: 'header' 'content-technologies' 'technologies'
+    .header
+        grid-area: header
+
+    .content
+        grid-area: content
+        padding: 1vw
+
+    .left-top-content
+        grid-area: image-1
+
+    .left-bottom-content
+        grid-area: image-2
+
+    .right-top-content
+        width: 95%
+        grid-area: image-3
+
+    .right-bottom-content
+        width: 95%
+        grid-area: image-4
+
+    .technologies
+        grid-area: technologies
+
+    .content-technologies
+        grid-area: content-technologies
+
+    .mini-graphic
+        display: block
+        width: 100vw
+        height: 30vh
+        margin-bottom: 20px
