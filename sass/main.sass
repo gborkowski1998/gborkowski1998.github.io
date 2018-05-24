@@ -77,12 +77,11 @@ header
 
 .technologies-graphic
     display: inline-block
-    width: 15%
+    width: 20%
     height: 150px
     margin-right: 5%
     padding: 3% 0%
     position: relative
-    margin-top: 10%
 
 .image
     display: flex
@@ -118,7 +117,7 @@ header
 
 /*LINK CUSTOMIZATION*/
 
-a.mail
+a
     color: #ffffff
 
 a.mail:hover
@@ -126,7 +125,7 @@ a.mail:hover
     color: #000000
     transition: 1s all
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 900px)
     body
         font-size: 10px
     header
@@ -141,8 +140,6 @@ a.mail:hover
         height: 4vh
     .arrow
         height: 10vw
-    #gulp
-        height: 30px
     .container
         display: grid
         grid-template-rows: 15vh 1fr
@@ -190,3 +187,85 @@ a.mail:hover
         width: 100vw
         height: 30vh
         margin-bottom: 20px
+
+@media only screen and (max-width: 1300px) and (min-width: 1200px)
+    .technologies-graphic:first-child
+        margin-top: 10%
+
+@media only screen and (max-width: 1100px) and (min-width: 1000px)
+    .technologies-graphic:first-child
+        margin-top: 15%
+    body
+        font-size: 24px
+    header
+        font-size: 50px
+
+@media only screen and (max-width: 500px) and (min-width: 400px)
+    body
+        font-size: 10px
+    header
+        font-size: 20px
+    .technologies-graphic
+        height: 5vh
+@media only screen and (max-width: 600px) and (min-width: 510px)
+    body
+        font-size: 10px
+    header
+        font-size: 20px
+    .technologies-graphic
+        height: 5vh
+
+@media only screen and (max-width: 1400px) and (min-width: 1300px)
+    .technologies-graphic:first-child
+        margin-top: 10%
+
+@media only screen and (max-width: 900px) and (min-height: 1000px)
+    body
+        font-size: 26px
+    .technologies-graphic
+        height: 7vh
+    .mini-graphic
+        width: 100vw
+        height: 50vh
+        margin-bottom: 20px
+
+@media only screen and (max-width: 800px) and (max-height: 500px)
+    body
+        font-size: 14px
+    .mini-graphic
+        width: 100vw
+        height: 80vh
+        margin-bottom: 20px
+    .technologies-graphic
+        height: 20vh
+    .container-technologies
+        display: grid
+        grid-template-rows: 1fr 20vw 1fr
+        grid-template-columns: 1fr
+        grid-template-areas: 'header' 'content-technologies' 'technologies'
+
+@media only screen and (max-width: 600px) and (max-height: 400px)
+    .technologies-graphic:first-child
+        margin-top: 5%
+
+@media only screen and (max-width: 1000px) and (min-width: 900px) and (min-height: 500px) and (max-height: 650px)
+    body
+        font-size: 20px
+    .technologies-graphic:first-child
+        margin-top: 10%
+    .technologies-graphic
+        height: 15vh
+    header
+        font-size: 40px
+@media only screen and (max-width: 600px) and (min-width: 500px) and (min-height: 300px) and (max-height: 400px)
+    body
+        font-size: 10px
+@media only screen and (max-width: 700px) and (min-width: 550px) and (min-height: 900px) and (max-height: 1000px)
+    body
+        font-size: 20px
+@media only screen and (max-width: 800px) and (min-width: 700px) and (min-height: 1200px) and (max-height: 1300px)
+    body
+        font-size: 19px
+@media only screen and (max-width: 700px) and (min-width: 600px) and (min-height: 300px) and (max-height: 400px)
+    body
+        font-size: 12px
