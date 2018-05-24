@@ -114,7 +114,7 @@ header {
 a {
   color: #ffffff; }
 
-a:hover {
+a.mail:hover {
   background-color: #ffffff;
   color: #000000;
   transition: 1s all; }
